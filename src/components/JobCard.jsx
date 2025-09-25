@@ -13,8 +13,8 @@ function JobCard({ job }) {
             </div>
             <div className="job-title">
                 <h3>{job.title}</h3>
-                <h4>{job.company}</h4>
-                <p>{job.location}</p>
+                <h4>{job.company.display_name}</h4>
+                <p>{job.location.display_name}</p>
             </div>
         </div>
     );
