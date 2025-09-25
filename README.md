@@ -4,9 +4,10 @@
 Browse and apply for jobs in Canada.
 
 ## Tech Stack
-- React
-- JavaScript
-- CSS
+- Frontend: React, React Router DOM
+- Language: JavaScript
+- Styling: CSS
+- Build Tool: Vite
 
 ## How to run:
 1. Clone this repository
