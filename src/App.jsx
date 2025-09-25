@@ -1,10 +1,11 @@
 import JobCard from "./components/JobCard";
+import Home from "./pages/Home";
 
 function App() {
 
   return (
     <>
-      <JobCard job={{ title: "Team Member", company: "Tim Hortons", location: "Vancouver" }} />
+      <Home />
     </>
   );
 }
