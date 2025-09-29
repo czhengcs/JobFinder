@@ -1,13 +1,19 @@
-function JobCard({ job }) {
+import { useJobContext } from "../contexts/JobContext"
 
-    function onSaveClick() {
-        alert("clicked")
+function JobCard({ job }) {
+    const { isSaved, addToSaved, removeFromSaved } = useJobContext();
+    const saved = isSaved(job.id);
+
+    function onSaveClick(e) {
+        e.preventDefault();
+        if (saved) removeFromSaved(job.id)
+        else addToSaved(job)
     }
 
     return (
         <div className="job-card">
             <div className="job-overlay">
-                <button className={`save-btn`} onClick={onSaveClick}>
+                <button className={`save-btn  ${saved ? "saved" : ""}`} onClick={onSaveClick}>
                     ★
                 </button>
             </div>
