@@ -8,10 +8,23 @@ function Home() {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    const handleSearch = (e) => {
+    const handleSearch = async (e) => {
         e.preventDefault()
-        alert(searchQuery)
-    }
+        if (!searchQuery.trim()) return
+        if (loading) return
+
+        setLoading(true)
+        try {
+            const searchResults = await searchJobs(searchQuery)
+            setJobs(searchResults)
+            setError(null)
+        } catch (err) {
+            console.log(err)
+            setError("Failed to search jobs...")
+        } finally {
+            setLoading(false)
+        }
+    };
 
     useEffect(() => {
         const loadJobs = async () => {
