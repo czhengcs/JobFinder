@@ -1,0 +1,49 @@
+.job-card {
+  border: 1px solid gray;
+  position: relative;
+  cursor: pointer;
+  padding: 22px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  transition: 0.3s;
+}
+
+.job-card:hover {
+  border: 1px solid #ffffffec;
+  transform: translateY(-3px);
+}
+
+.job-overlay {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.save-btn {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: #ffffffec;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: rgba(97, 98, 109, 0.7);
+}
+
+.save-btn.saved {
+  color: #ffd700;
+}
+
+.job-title h4 {
+  color: gray;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.job-title p {
+  color: gray;
+}

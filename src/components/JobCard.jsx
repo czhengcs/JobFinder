@@ -1,4 +1,5 @@
 import { useJobContext } from "../contexts/JobContext"
+import "../css/JobCard.css" 
 
 function JobCard({ job }) {
     const { isSaved, addToSaved, removeFromSaved } = useJobContext();
