@@ -25,3 +25,19 @@
     text-decoration: underline;
     color: rgb(160, 201, 255);
 }
+
+@media (max-width: 768px) {
+  .jobs-container {
+    flex-direction: column;
+  }
+
+  .job-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 2;
+    background: #0d0e14;
+  }
+}
