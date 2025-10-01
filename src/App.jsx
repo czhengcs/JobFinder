@@ -1,4 +1,3 @@
-import JobCard from "./components/JobCard";
 import Saved from "./pages/Saved";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom"

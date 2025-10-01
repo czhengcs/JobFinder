@@ -1,7 +1,7 @@
 import { useJobContext } from "../contexts/JobContext"
 import "../css/JobCard.css" 
 
-function JobCard({ job }) {
+function JobCard({ job, onClick }) {
     const { isSaved, addToSaved, removeFromSaved } = useJobContext();
     const saved = isSaved(job.id);
 
@@ -12,7 +12,7 @@ function JobCard({ job }) {
     }
 
     return (
-        <div className="job-card">
+        <div className="job-card" onClick={onClick}>
             <div className="job-overlay">
                 <button className={`save-btn  ${saved ? "saved" : ""}`} onClick={onSaveClick}>
                     ★
