@@ -1,0 +1,23 @@
+.saved {
+    padding: 20px 0;
+}
+
+.saved h1 {
+    text-align: center;
+    margin-bottom: 67px;
+}
+
+.saved-empty {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.saved-empty h2 {
+    margin-bottom: 16px;
+    font-size: 28px;
+}
+
+.saved-empty p {
+    color: gray;
+    font-size: 18px;
+}

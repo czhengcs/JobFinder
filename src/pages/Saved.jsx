@@ -1,17 +1,36 @@
 import { useJobContext } from "../contexts/JobContext"
 import JobCard from "../components/JobCard"
+import JobPanel from "../components/JobPanel";
+import { useState, useEffect } from "react";
+import "../css/Saved.css"
 
 function Saved() {
     const { saved } = useJobContext();
+    const [selectedJob, setSelectedJob] = useState(null);
 
-    if (saved) {
+    useEffect(() => {
+        if (saved.length > 0 && !selectedJob) {
+            setSelectedJob(saved[0]);
+        }
+    }, [saved, selectedJob]);
+
+    const handleSelectJob = (job) => {
+        setSelectedJob(job);
+    }
+
+    if (saved.length > 0) {
         return (
             <div className="saved">
-                <h2>Your Saved Jobs</h2>
-                <div className="job-list">
-                    {saved.map((job) => (
-                        <JobCard job={job} key={job.id} />
-                    ))}
+                <h1>Your Saved Jobs</h1>
+                <div className="jobs-container">
+                    <div className="job-list">
+                        {saved.map((job) => (
+                            <JobCard job={job} key={job.id} onClick={() => handleSelectJob(job)} />
+                        ))}
+                    </div>
+                    <div className="job-panel-container">
+                        {selectedJob && <JobPanel job={selectedJob} />}
+                    </div>
                 </div>
             </div>
         );
