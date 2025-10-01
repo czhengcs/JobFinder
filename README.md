@@ -4,7 +4,7 @@ A minimal and user-friendly React application for browsing and applying for jobs
 
 ## Features
 
-- **Job Search**: Browse job listings in Canada in real-time
+- **Job Search**: Browse real-time job listings in Canada
 - **Save Jobs**: Bookmark job listings to review them later
 - **Interactive Job Panels**: Click any job to view details and apply
 - **Responsive Design**: Clean user interface on both desktop and mobile devices
@@ -17,6 +17,20 @@ A minimal and user-friendly React application for browsing and applying for jobs
 - **Language**: JavaScript
 - **Styling**: Custom CSS
 - **Build Tool**: Vite
+
+## Screenshots
+
+<div>
+  <h3>Desktop</h3>
+  <img src="images/desktop_search.png" width="800" alt="Desktop search"/>
+  <br/><br/>
+  <img src="images/desktop_saved.png" width="800" alt="Desktop saved jobs"/>
+  
+  <h3>Mobile</h3>
+  <img src="images/mobile_saved.png" width="400" alt="Mobile saved jobs"/>
+  <br/><br/>
+  <img src="images/mobile_search.png" width="200" alt="Mobile search"/>
+</div>
 
 ## Installation & Setup
 
