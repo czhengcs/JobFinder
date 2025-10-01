@@ -1,6 +1,7 @@
 import JobCard from "../components/JobCard";
 import { useState, useEffect } from "react";
 import { searchJobs, getJobs } from "../services/api";
+import "../css/Home.css";
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -53,7 +54,7 @@ function Home() {
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
                 />
-                <button type="submit" className="search-button">Search</button>
+                <button type="submit" className="search-button">🔍︎</button>
             </form>
 
             {error && <div className="error-message">{error}</div>}
