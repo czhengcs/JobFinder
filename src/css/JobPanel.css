@@ -1,0 +1,27 @@
+.job-panel {
+    border: 1px solid gray;
+    padding: 22px;
+    border-radius: 16px;
+}
+
+.job-panel h2 {
+    margin-bottom: 40px;
+}
+
+.job-panel p:last-of-type {
+    margin-top: 20px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.job-panel a {
+    color: rgb(102, 168, 255);
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.job-panel a:hover {
+    text-decoration: underline;
+    color: rgb(160, 201, 255);
+}

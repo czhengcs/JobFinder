@@ -1,3 +1,35 @@
+.home-content {
+  margin-top: 50px;
+}
+
+.jobs-container {
+  display: flex;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 5%;
+}
+
+.job-list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.job-panel-container {
+  flex: 1.5;
+  position: sticky;
+  top: 80px;
+  height: fit-content;
+}
+
+.loading {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding: 0 5%;
+}
+
 .search-form {
   display: flex;
   margin: 35px auto;

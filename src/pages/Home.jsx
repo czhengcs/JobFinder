@@ -43,6 +43,7 @@ function Home() {
         try {
             const searchResults = await searchJobs(searchQuery)
             setJobs(searchResults)
+            setSelectedJob(null)
             setError(null)
         } catch (err) {
             console.log(err)

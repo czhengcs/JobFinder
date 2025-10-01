@@ -1,3 +1,5 @@
+import "../css/JobPanel.css"
+
 function JobPanel({ job }) {
 
     const formatType = (type) => {

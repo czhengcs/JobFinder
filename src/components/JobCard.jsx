@@ -7,6 +7,7 @@ function JobCard({ job, onClick }) {
 
     function onSaveClick(e) {
         e.preventDefault();
+        e.stopPropagation();
         if (saved) removeFromSaved(job.id)
         else addToSaved(job)
     }
