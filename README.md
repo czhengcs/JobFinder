@@ -50,7 +50,7 @@ npm install
 
 ### Set up environment variables
 ```bash
-cp .env.example .env
+cp env.example .env
 # Add your Adzuna API credentials to .env
 ```
 
